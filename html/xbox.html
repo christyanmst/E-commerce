@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CARAMELO STORE</title> 
+        <link rel="stylesheet" type="text/css" href="/CARAMELO STORE/css/style.css">  
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6bcf33e3b1.js" crossorigin="anonymous"></script>
+
+        
+    </head>
+    <body> 
+        <div class="container">
+            <header>
+                <nav>
+                    <div class="nav-container">
+                        
+                        <a href="index.html">
+                            <img id="logo" src="/CARAMELO STORE/img/logo.png" alt="Caramelo Store">
+                        </a>
+                        <div class="nav-nome">
+                            <font size="5px"><h1>CARAMELO STORE</h1></font>
+                        </div>                       
+                        <ul>
+                            <li><a href="/PROJ HTML CSS/andamento/login.html">Login</a></li>
+                            <li> <a href="/PROJ HTML CSS/andamento/cadastro.html">Cadastro</a></li>
+                            <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><i class="fa-solid fa-cart-shopping"></i> (<span class="total-count"></span>)</button></li>                        </ul>
+
+                        </ul>
+                        <div id="divBusca">
+                            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                            
+                        </div>
+                    </div>
+                    
+                </nav>
+                <div class="navbar2">
+                    <div id="main-banner">
+                        <img src="/CARAMELO STORE/img/log_transparent.png" width="800px" height="100px">
+                    </div>
+                </div>      
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">Categoria</button>
+                    <div class="dropdown-content">
+                        <a href="/CARAMELO STORE/html/outrascat.html">Eletrônicos</a>
+                        <a href="/CARAMELO STORE/html//outrascat.html">Eletrodomésticos</a>
+                        <a href="/CARAMELO STORE/html/outrascat.html">Ferramentas</a>
+                        <a href="/CARAMELO STORE/html/catgames.html">Games</a>
+                        <a href="/CARAMELO STORE/html/outrascat.html">Livros</a>
+                        <a href="/CARAMELO STORE/html/outrascat.html">Pet Shop</a>
+                        <a href="/CARAMELO STORE/html/outrascat.html">Relógios</a>
+                    </div>
+                </div> 
+                <a href="/CARAMELO STORE/html/index.html">Início</a>
+                <a href="/CARAMELO STORE/html/catgames.html">Mais vendidos</a>
+                <a href="/CARAMELO STORE/html/faleconosc.html">Fale Conosco</a>
+            </div>
+            
+            </header>
+            <div id="divmain3">
+               <div class="xbox">
+                <div class="prc">
+                    <font size="7">
+                        <p>R$2.612,41</br>
+                        </font>
+                        NO BOLETO</p>
+                    
+                    <div class="cols">
+                        <font size="5">
+                        <p>OU R$ 3.000,00</br>
+                        </font>
+                        EM ATÉ 10X R$300,00
+                        </p>
+                    
+                    </div>
+                    <div>
+                        <p>CALCULAR FRETE</p>
+                        <div >
+                            <input type="text" name="cep" required placeholder="Ex: XX-XXX-XXX"></br></br>
+                            <p>FORMAS DE PAGAMENTO</p>
+                            <select>
+                                <option>Cartão de Crédito</option>
+                                <option>Cartão de Débito</option>
+                                <option>Dinheiro</option>
+                                <option>Pix</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="btt"> 
+                            <a href="#" data-name="Xbox" data-price="2612.41" class="add-to-cart btn btn-primary"><h4>Adicionar ao carrinho <i class="fa-solid fa-cart-shopping"></i></h4></a>                    </div>
+                   </div>
+                   <div class="fot"> 
+                    <font size="5">
+                        <p> XBOX SERIES S 2020 SSD C/ 1 CONTROLE E SSD, GAMEPASS INCLUÍDO</p>
+                     </font>
+                       <img src="/CARAMELO STORE/img/prod1.png" width="500px" height="400px">
+                   </div>
+                   <div class="descpr">
+                       <H3>Descrição do produto</H3>
+                       <p>Xbox Series S, nosso Xbox menor e mais elegante de todos os tempos. Com taxas de quadros mais altas, tempos de carregamento mais rápidos e mundos mais ricos e dinâmicos, o Xbox Series S oferece desempenho e velocidade de última geração em um formato compacto e totalmente digital.  O Game Pass é um serviço que te dá acesso a centenas de jogos de todos os gêneros (assinatura vendida separadamente). O melhor sistema online para multiplayer está presente no Xbox Series S, o Xbox Live (assinatura vendida separadamente). Tudo isso com um SSD de 512GB para armazenar esses jogos. Venha para o lado verde!</p>
+                   </div>
+               </div>
+               
+            </div>
+            <div class="lateral">
+                <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                          <h2 class="modal-title" id="exampleModalLabel">Carrinho
+                          </h2>
+                          
+                        </div>
+                        <div class="modal-body">
+                          <table class="show-cart table">
+                            
+                          </table>
+                          <div>Preço total: R$<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </main>
+                    <script src="/PROJ HTML CSS/javascript/teste.js"></script>
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                    <script src="/PROJ HTML CSS/javascript/carrinho.js"></script>
+    </body>   
+</html>
